@@ -41,6 +41,25 @@
             </div>
             
             <div class="tool-group">
+                <button id="shapeModeBtn" class="btn">🎄 Shape Mode</button>
+                <label for="shapeType">Shape:</label>
+                <select id="shapeType">
+                    <option value="circle">Circle</option>
+                    <option value="rectangle">Rectangle</option>
+                    <option value="triangle">Triangle</option>
+                    <option value="star">⭐ Star</option>
+                    <option value="tree">🎄 Tree</option>
+                    <option value="snowflake">❄️ Snowflake</option>
+                </select>
+            </div>
+            
+            <div class="tool-group">
+                <label for="shapeSize">Shape Size:</label>
+                <input type="range" id="shapeSize" min="20" max="200" value="50">
+                <span id="shapeSizeValue">50</span>
+            </div>
+            
+            <div class="tool-group">
                 <button id="saveBtn" class="btn">Save Image</button>
                 <button id="undoBtn" class="btn">Undo</button>
             </div>
@@ -51,7 +70,7 @@
         </div>
         
         <div class="info">
-            <p>💡 Tip: Use different brush types for creative effects!</p>
+            <p>💡 Tip: Use different brush types for creative effects! Click on canvas in Shape Mode to insert Christmas shapes!</p>
         </div>
     </div>
     
