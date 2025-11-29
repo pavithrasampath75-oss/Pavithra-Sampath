@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Drawing Canvas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎨 Creative Drawing Canvas</h1>
+        </header>
+        
+        <div class="toolbar">
+            <div class="tool-group">
+                <label for="colorPicker">Color:</label>
+                <input type="color" id="colorPicker" value="#ffffff">
+            </div>
+            
+            <div class="tool-group">
+                <label for="brushSize">Brush Size:</label>
+                <input type="range" id="brushSize" min="1" max="50" value="5">
+                <span id="brushSizeValue">5</span>
+            </div>
+            
+            <div class="tool-group">
+                <button id="clearBtn" class="btn">Clear Canvas</button>
+                <button id="eraserBtn" class="btn">Eraser</button>
+                <button id="fillBtn" class="btn">Fill Background</button>
+            </div>
+            
+            <div class="tool-group">
+                <label for="brushType">Brush Type:</label>
+                <select id="brushType">
+                    <option value="round">Round</option>
+                    <option value="square">Square</option>
+                    <option value="spray">Spray</option>
+                    <option value="rainbow">Rainbow</option>
+                </select>
+            </div>
+            
+            <div class="tool-group">
+                <button id="saveBtn" class="btn">Save Image</button>
+                <button id="undoBtn" class="btn">Undo</button>
+            </div>
+        </div>
+        
+        <div class="canvas-container">
+            <canvas id="drawingCanvas"></canvas>
+        </div>
+        
+        <div class="info">
+            <p>💡 Tip: Use different brush types for creative effects!</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
